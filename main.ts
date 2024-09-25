@@ -132,33 +132,7 @@ async function writeToFile(filePath: string, content: string): Promise<void> {
 // Use case: From a list of images url, generate their description. Store the result as .txt file
 (async () => {
   // List of public image URLs
-  const imageUrls = [
-    "https://s7g10.scene7.com/is/image/knauf/IMG-20210117-WA0009",
-    "https://s7g10.scene7.com/is/image/knauf/IMG-20210113-WA0008",
-    "https://s7g10.scene7.com/is/image/knauf/IMG-20210113-WA0004",
-    "https://s7g10.scene7.com/is/image/knauf/energy-efficiency-more-comfort-2",
-    "https://s7g10.scene7.com/is/image/knauf/Knauf-Insulated-Branded-for-Carters",
-    "https://s7g10.scene7.com/is/image/knauf/New-Homes",
-    "https://s7g10.scene7.com/is/image/knauf/retusche_rotkalk_in_fuellmoertel_tectem_25kg_10spr_540x340_rev02_20200918_pers",
-    "https://s7g10.scene7.com/is/image/knauf/cleaneo-single_Bellini",
-    "https://s7g10.scene7.com/is/image/knauf/_EBR6798",
-    "https://s7g10.scene7.com/is/image/knauf/Stahlblechwand-1",
-    "https://s7g10.scene7.com/is/image/knauf/c8f4a014fa24c3fb",
-    "https://s7g10.scene7.com/is/image/knauf/VP_Raumklima_2",
-    "https://s7g10.scene7.com/is/image/knauf/3c6f1eeb99488ba6",
-    "https://s7g10.scene7.com/is/image/knauf/ID_129035",
-    "https://s7g10.scene7.com/is/image/knauf/GKA50WT_Aufsicht",
-    "https://s7g10.scene7.com/is/image/knauf/statik",
-    "https://s7g10.scene7.com/is/image/knauf/ID_290554_MPI_05",
-    "https://s7g10.scene7.com/is/image/knauf/ID_149828_BASEL05_02-1",
-    "https://s7g10.scene7.com/is/image/knauf/Fotolia_111788606_Subscription_XXL",
-    "https://s7g10.scene7.com/is/image/knauf/ee274afa82ef5211",
-    "https://s7g10.scene7.com/is/image/knauf/heizkosten-senken",
-    "https://s7g10.scene7.com/is/image/knauf/kn01831",
-    "https://s7g10.scene7.com/is/image/knauf/Knauf-Wuerzburg_Alte_Maelzerei_Estrich_FE-Fire_6",
-    "https://s7g10.scene7.com/is/image/knauf/Knauf-Grundschule-Muenchen-Infanteriestr-VHF-Aquapanel%20%283%29",
-    "https://s7g10.scene7.com/is/image/knauf/Stadtschloss-Berlin-Kuppeldecke%20%284%29",
-  ];
+  const imageUrls = [];
 
   const filePath = "./image_descriptions.txt";
 

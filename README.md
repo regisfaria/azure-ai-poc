@@ -19,3 +19,5 @@ and execute with:
 ```
 tsx main.ts
 ```
+
+Important: You must replace values on `main.ts` with your Azure credentials. And if you want to use the Use Case of imagesUrls, you must also provide the links inside the array. 
